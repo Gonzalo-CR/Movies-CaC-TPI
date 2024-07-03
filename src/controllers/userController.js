@@ -33,10 +33,10 @@ const getUserByEmail = (Email) => {
 };
 
 // Crear nuevo usuario
-const createUser = (Name, Surname, Email, Password, Birthday, Countries_CountryID) => {
+const createUser = (Name, Surname, Email, Password, Birthday, ProfilePicture, Countries_CountryID) => {
     return new Promise((resolve, reject) => {
-        const sql = 'INSERT INTO Users (Name, Surname, Email, Password, Birthday, Countries_CountryID) VALUES (?, ?, ?, ?, ?, ?)';
-        db.query(sql, [Name, Surname, Email, Password, Birthday, Countries_CountryID], (err, result) => {
+        const sql = 'INSERT INTO Users (Name, Surname, Email, Password, Birthday, ProfilePicture, Countries_CountryID) VALUES (?, ?, ?, ?, ?, ?, ?)';
+        db.query(sql, [Name, Surname, Email, Password, Birthday, ProfilePicture, Countries_CountryID], (err, result) => {
             if (err) return reject(err);
             
             const newUser = {
@@ -46,6 +46,7 @@ const createUser = (Name, Surname, Email, Password, Birthday, Countries_CountryI
                 Email,
                 Password,
                 Birthday,
+                ProfilePicture,
                 Countries_CountryID
             };
             const usersFilePath = path.join(__dirname, '../../data/users.json');
@@ -65,9 +66,9 @@ const createUser = (Name, Surname, Email, Password, Birthday, Countries_CountryI
 // Actualizar usuario
 const updateUser = (req, res) => {
     const { UserID } = req.params;
-    const { Name, Surname, Email, Password, Birthday, Countries_CountryID } = req.body;
-    const sql = 'UPDATE Users SET Name = ?, Surname = ?, Email = ?, Password = ?, Birthday = ?, Countries_CountryID = ? WHERE UserID = ?';
-    db.query(sql, [Name, Surname, Email, Password, Birthday, Countries_CountryID, UserID], (err, result) => {
+    const { Name, Surname, Email, Password, Birthday, ProfilePicture, Countries_CountryID } = req.body;
+    const sql = 'UPDATE Users SET Name = ?, Surname = ?, Email = ?, Password = ?, Birthday = ?, ProfilePicture = ?, Countries_CountryID = ? WHERE UserID = ?';
+    db.query(sql, [Name, Surname, Email, Password, Birthday, ProfilePicture, Countries_CountryID, UserID], (err, result) => {
         if (err) throw err;
         res.json({ message: 'User updated' });
     });
