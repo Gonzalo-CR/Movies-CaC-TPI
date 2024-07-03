@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | CAC-MOVIES</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body class="bodyRegistrarse">
+    <header class="headerRegistrarse">
+        <a class="anclaLogo" href="../../index.html">
+            <i class="fas fa-film" aria-hidden="true"></i>
+            <span>CAC-Movies</span>
+        </a>
+    </header>
+    <main id="main" class="main">
+        <section data-aos="zoom-in" data-aos-duration="1000" class="seccionRegistrarse">
+            <form id="registerForm" method="post" action="/register">
+                <h2 class="tituloRegistrarse">Registro</h2>
+                <div>
+                    <input type="text" placeholder="Nombre" id="Name" name="Name" required>
+                    <div class="error-text"></div>
+                </div>
+                <div>
+                    <input type="text" placeholder="Apellido" id="Surname" name="Surname" required>
+                    <div class="error-text"></div>
+                </div>
+                <div>
+                    <input type="email" placeholder="Email" id="Email" name="Email" required>
+                    <div class="error-text"></div>
+                </div>
+                <div>
+                    <input type="password" placeholder="Contraseña" id="Password" name="Password" required>
+                    <div class="error-text"></div>
+                </div>
+                <div>
+                    <input type="date" placeholder="Fecha de Nacimiento (dd/mm/aaaa)" id="Birthday" name="Birthday" required>
+                    <div class="error-text"></div>
+                </div>
+                <div>
+                    <select name="Countries_CountryID" id="Countries_CountryID" title="country" required>
+                        <option value="">País</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BR">Brasil</option>
+                        <option value="CH">Chile</option>
+                        <option value="CO">Colombia</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Perú</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="VE">Venezuela</option>
+                    </select>
+                    <div class="error-text"></div>
+                </div>
+                <div class="terminos">
+                    <input class="check" type="checkbox" id="terminos" required>
+                    <label class="textoCheck" for="terminos">Acepto términos y condiciones</label>
+                    <div class="error-text"></div>
+                </div>
+                <div>
+                    <input class="boton" type="submit" value="Registrarse">
+                </div>
+                <div>
+                    <a class="ayuda" href="#">Necesitas ayuda?</a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.querySelector('form');
+            form.addEventListener('submit', (event) => {
+                if (!validateForm()) {
+                    console.log('El formulario no es válido. Por favor, corrige los errores.');
+                    event.preventDefault(); 
+                } else {
+                    console.log('El formulario es válido. Enviar datos...');
+                }
+            });
+
+            const validateForm = () => {
+                let isValid = true;
+
+                isValid = validateField('Name', 'El nombre es obligatorio') && isValid;
+                isValid = validateField('Surname', 'El apellido es obligatorio') && isValid;
+                isValid = validateEmailField('Email', 'El correo electrónico no es válido') && isValid;
+                isValid = validateField('Password', 'La contraseña es obligatoria') && isValid;
+                isValid = validateField('Birthday', 'La fecha de nacimiento es obligatoria') && isValid;
+                isValid = validateField('Countries_CountryID', 'El país es obligatorio') && isValid;
+
+                const terminos = document.getElementById('terminos').checked;
+                if (!terminos) {
+                    isValid = false;
+                    setErrorFor(document.getElementById('terminos'), 'Debes aceptar los términos y condiciones');
+                } else {
+                    setSuccessFor(document.getElementById('terminos'));
+                }
+
+                return isValid;
+            };
+
+            const validateField = (fieldId, errorMessage) => {
+                const field = document.getElementById(fieldId);
+                const value = field.value.trim();
+                if (value === '') {
+                    setErrorFor(field, errorMessage);
+                    return false;
+                } else {
+                    setSuccessFor(field);
+                    return true;
+                }
+            };
+
+            const validateEmailField = (fieldId, errorMessage) => {
+                const field = document.getElementById(fieldId);
+                const email = field.value.trim();
+                if (email === '') {
+                    setErrorFor(field, 'El correo electrónico es obligatorio');
+                    return false;
+                } else if (!isEmail(email)) {
+                    setErrorFor(field, errorMessage);
+                    return false;
+                } else {
+                    setSuccessFor(field);
+                    return true;
+                }
+            };
+
+            const setErrorFor = (input, message) => {
+                const formControl = input.closest('div');
+                const errorText = formControl.querySelector('.error-text');
+                formControl.classList.add('error');
+                errorText.innerText = message;
+                input.focus();
+            };
+
+            const setSuccessFor = (input) => {
+                const formControl = input.closest('div');
+                formControl.classList.remove('error');
+                const errorText = formControl.querySelector('.error-text');
+                errorText.innerText = '';
+            };
+
+            const isEmail = (email) => {
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(email);
+            };
+
+            form.querySelectorAll('input').forEach(input => {
+                input.addEventListener('input', () => {
+                    const value = input.value.trim();
+                    if (value !== '') {
+                        setSuccessFor(input);
+                    }
+                });
+            });
+
+            form.querySelectorAll('select').forEach(select => {
+                select.addEventListener('change', () => {
+                    const value = select.value;
+                    if (value !== '') {
+                        setSuccessFor(select);
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="../js/valida_registrarse.js"></script>
+</body>
+</html>
+<!--
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | CAC-MOVIES</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body class="bodyRegistrarse">
+    <header class="headerRegistrarse">
+        <a class="anclaLogo" href="../../index.html">
+            <i class="fas fa-film" aria-hidden="true"></i>
+            <span>CAC-Movies</span>
+        </a>
+    </header>
+    <main id="main" class="main">
+        <section data-aos="zoom-in" data-aos-duration="1000" class="seccionRegistrarse">
+            <form action="" method="get">
+                <h2 class="tituloRegistrarse">Registro</h2>
+                <div>
+                    <input type="text" placeholder="Nombre"  id="nombre" name="nombre">
+                    <div class="error-text"></div>
+                </div>
+                <div>
+                    <input type="text" placeholder="Apellido"  id="apellido" name="apellido">
+                    <div class="error-text"></div>
+                </div>
+                <div>
+                    <input type="email" placeholder="Email"  id="email" name="email">
+                    <div class="error-text"></div>
+                </div>
+                <div>
+                    <input type="password" placeholder="Contraseña"  id="password" name="password">
+                    <div class="error-text"></div>
+                </div>
+                <div>
+                    <input type="date" placeholder="Fecha de Nacimiento (dd/mm/aaaa)"  id="fechaNacimiento" name="fechaNacimiento">
+                    <div class="error-text"></div>
+                </div>
+                <div>
+                    <select name="pais" id="pais" title="country">
+                        <option value="">País</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BR">Brasil</option>
+                        <option value="CH">Chile</option>
+                        <option value="CO">Colombia</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Perú</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="VE">Venezuela</option>
+                    </select>
+                    <div class="error-text"></div>
+                </div>
+                <div class="terminos">
+                    <input class="check" type="checkbox" id="terminos">
+                    <label class="textoCheck" for="terminos">Acepto términos y condiciones</label>
+                    <div class="error-text"></div>
+                </div>
+                <div>
+                    <input class="boton" type="submit" value="Registrarse">
+                </div>
+                <div>
+                    <a class="ayuda" href="#">Necesitas ayuda?</a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+   <script src="../js/valida_registrarse.js"></script>
+</body>
+</html>
+-->

@@ -1,0 +1,52 @@
+[
+    {
+        "UserID": 1,
+        "Name": "John",
+        "Surname": "Doe",
+        "Email": "johndoe@example.com",
+        "Password": "hashed_password_123",
+        "Birthday": "1990-05-15",
+        "ProfilePicture": "https://example.com/profile.jpg",
+        "Countries_CountryID": 7
+    },
+    {
+        "UserID": 2,
+        "Name": "Jane",
+        "Surname": "Smith",
+        "Email": "janesmith@example.com",
+        "Password": "hashed_password_456",
+        "Birthday": "1985-08-22",
+        "ProfilePicture": "https://example.com/profile2.jpg",
+        "Countries_CountryID": 4
+    },
+    {
+        "UserID": 3,
+        "Name": "Michael",
+        "Surname": "Johnson",
+        "Email": "michaeljohnson@example.com",
+        "Password": "hashed_password_789",
+        "Birthday": "1988-12-10",
+        "ProfilePicture": "https://example.com/profile3.jpg",
+        "Countries_CountryID": 6
+    },
+    {
+        "UserID": 4,
+        "Name": "Emily",
+        "Surname": "Brown",
+        "Email": "emilybrown@example.com",
+        "Password": "hashed_password_abc",
+        "Birthday": "1995-03-28",
+        "ProfilePicture": "https://example.com/profile4.jpg",
+        "Countries_CountryID": 7
+    },
+    {
+        "UserID": 5,
+        "Name": "David",
+        "Surname": "Wilson",
+        "Email": "davidwilson@example.com",
+        "Password": "hashed_password_xyz",
+        "Birthday": "1983-09-18",
+        "ProfilePicture": "https://example.com/profile5.jpg",
+        "Countries_CountryID": 7
+    }
+]

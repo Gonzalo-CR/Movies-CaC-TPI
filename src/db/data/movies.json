@@ -1,0 +1,101 @@
+[
+    {
+        "MovieID": 1,
+        "Title": "Inside Out 2",
+        "Director": "Kelsey Mann",
+        "Year": 2024,
+        "CoverImage": "https://image.tmdb.org/t/p/w500//gMB8vgHu2lcyzv1fyptD6drHmJd.jpg",
+        "Countries_CountryID": 7,
+        "Genres_GenreID": 2
+    },
+    {
+        "MovieID": 2,
+        "Title": "Furiosa a Mad Max Saga",
+        "Director": "George Miller",
+        "Year": 2024,
+        "CoverImage": "https://image.tmdb.org/t/p/w500//iADOJ8Zymht2JPMoy3R7xceZprc.jpg",
+        "Countries_CountryID": 4,
+        "Genres_GenreID": 1
+    },
+    {
+        "MovieID": 3,
+        "Title": "Bad Boys Ride or Die",
+        "Director": "Adil El / ArbiBilall Fallah",
+        "Year": 2024,
+        "CoverImage": "https://image.tmdb.org/t/p/w500//nP6RliHjxsz4irTKsxe8FRhKZYl.jpg",
+        "Countries_CountryID": 4,
+        "Genres_GenreID": 4
+    },
+    {
+        "MovieID": 4,
+        "Title": "If",
+        "Director": "John Krasinski",
+        "Year": 2024,
+        "CoverImage": "https://image.tmdb.org/t/p/w500//xbKFv4KF3sVYuWKllLlwWDmuZP7.jpg",
+        "Countries_CountryID": 4,
+        "Genres_GenreID": 2
+    },
+    {
+        "MovieID": 5,
+        "Title": "Godzilla x Kong The new Impire",
+        "Director": "Adam Wingard",
+        "Year": 2024,
+        "CoverImage": "https://image.tmdb.org/t/p/w500//z1p34vh7dEOnLDmyCrlUVLuoDzd.jpg",
+        "Countries_CountryID": 6,
+        "Genres_GenreID": 7
+    },
+    {
+        "MovieID": 6,
+        "Title": "The Godfather",
+        "Director": "Francis Ford Coppola",
+        "Year": 1972,
+        "CoverImage": "https://http2.mlstatic.com/D_NQ_NP_2X_849311-MLA52604231932_112022-F.webp",
+        "Countries_CountryID": 7,
+        "Genres_GenreID": 1
+    },
+    {
+        "MovieID": 7,
+        "Title": "Schindler´s List",
+        "Director": "Steven Spielberg",
+        "Year": 1993,
+        "CoverImage": "https://image.tmdb.org/t/p/original/xx4JCtIkUj31PJbPFRLhuBc1PRl.jpg",
+        "Countries_CountryID": 7,
+        "Genres_GenreID": 6
+    },
+    {
+        "MovieID": 8,
+        "Title": "Dune",
+        "Director": "Denis Villeneuve",
+        "Year": 2021,
+        "CoverImage": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
+        "Countries_CountryID": 7,
+        "Genres_GenreID": 3
+    },
+    {
+        "MovieID": 9,
+        "Title": "Oppenheimer",
+        "Director": "Christopher Nolan",
+        "Year": 2023,
+        "CoverImage": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+        "Countries_CountryID": 7,
+        "Genres_GenreID": 1
+    },
+    {
+        "MovieID": 10,
+        "Title": "Avengers: Endgame",
+        "Director": "Anthony Russo",
+        "Year": 2019,
+        "CoverImage": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+        "Countries_CountryID": 7,
+        "Genres_GenreID": 11
+    },
+    {
+        "MovieID": 11,
+        "Title": "The Terminator",
+        "Director": "James Cameron",
+        "Year": 1985,
+        "CoverImage": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/q8ffBuxQlYOhO3LJJ0VrRb5UbdR.jpg",
+        "Countries_CountryID": 7,
+        "Genres_GenreID": 1
+    }
+]

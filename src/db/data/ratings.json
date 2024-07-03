@@ -1,0 +1,203 @@
+[
+    {
+      "UserMovieRatingID": 1,
+      "RatingDate": "2023-05-15",
+      "Rating": 4.5,
+      "Users_UserID": 1,
+      "Users_Countries_CountryID": 1,
+      "Movies_MovieID": 1,
+      "Movies_Countries_CountryID": 1,
+      "Movies_Genres_GenreID": 1
+    },
+    {
+      "UserMovieRatingID": 2,
+      "RatingDate": "2023-06-20",
+      "Rating": 3.0,
+      "Users_UserID": 2,
+      "Users_Countries_CountryID": 2,
+      "Movies_MovieID": 3,
+      "Movies_Countries_CountryID": 1,
+      "Movies_Genres_GenreID": 3
+    },
+    {
+      "UserMovieRatingID": 3,
+      "RatingDate": "2023-04-10",
+      "Rating": 2.5,
+      "Users_UserID": 3,
+      "Users_Countries_CountryID": 3,
+      "Movies_MovieID": 2,
+      "Movies_Countries_CountryID": 2,
+      "Movies_Genres_GenreID": 2
+    },
+    {
+      "UserMovieRatingID": 4,
+      "RatingDate": "2023-07-05",
+      "Rating": 4.0,
+      "Users_UserID": 1,
+      "Users_Countries_CountryID": 1,
+      "Movies_MovieID": 4,
+      "Movies_Countries_CountryID": 1,
+      "Movies_Genres_GenreID": 4
+    },
+    {
+      "UserMovieRatingID": 5,
+      "RatingDate": "2023-08-12",
+      "Rating": 5.0,
+      "Users_UserID": 2,
+      "Users_Countries_CountryID": 2,
+      "Movies_MovieID": 5,
+      "Movies_Countries_CountryID": 2,
+      "Movies_Genres_GenreID": 5
+    },
+    {
+      "UserMovieRatingID": 6,
+      "RatingDate": "2023-09-18",
+      "Rating": 4.0,
+      "Users_UserID": 3,
+      "Users_Countries_CountryID": 3,
+      "Movies_MovieID": 6,
+      "Movies_Countries_CountryID": 1,
+      "Movies_Genres_GenreID": 1
+    },
+    {
+      "UserMovieRatingID": 7,
+      "RatingDate": "2023-10-25",
+      "Rating": 3.5,
+      "Users_UserID": 1,
+      "Users_Countries_CountryID": 1,
+      "Movies_MovieID": 7,
+      "Movies_Countries_CountryID": 2,
+      "Movies_Genres_GenreID": 2
+    },
+    {
+      "UserMovieRatingID": 8,
+      "RatingDate": "2023-11-30",
+      "Rating": 2.0,
+      "Users_UserID": 2,
+      "Users_Countries_CountryID": 2,
+      "Movies_MovieID": 8,
+      "Movies_Countries_CountryID": 1,
+      "Movies_Genres_GenreID": 3
+    },
+    {
+      "UserMovieRatingID": 9,
+      "RatingDate": "2023-12-05",
+      "Rating": 4.5,
+      "Users_UserID": 3,
+      "Users_Countries_CountryID": 3,
+      "Movies_MovieID": 9,
+      "Movies_Countries_CountryID": 2,
+      "Movies_Genres_GenreID": 4
+    },
+    {
+      "UserMovieRatingID": 10,
+      "RatingDate": "2024-01-15",
+      "Rating": 3.0,
+      "Users_UserID": 1,
+      "Users_Countries_CountryID": 1,
+      "Movies_MovieID": 10,
+      "Movies_Countries_CountryID": 1,
+      "Movies_Genres_GenreID": 5
+    },
+    {
+      "UserMovieRatingID": 11,
+      "RatingDate": "2024-02-20",
+      "Rating": 4.0,
+      "Users_UserID": 2,
+      "Users_Countries_CountryID": 2,
+      "Movies_MovieID": 11,
+      "Movies_Countries_CountryID": 2,
+      "Movies_Genres_GenreID": 1
+    },
+    {
+      "UserMovieRatingID": 12,
+      "RatingDate": "2024-03-10",
+      "Rating": 4.5,
+      "Users_UserID": 3,
+      "Users_Countries_CountryID": 3,
+      "Movies_MovieID": 12,
+      "Movies_Countries_CountryID": 1,
+      "Movies_Genres_GenreID": 2
+    },
+    {
+      "UserMovieRatingID": 13,
+      "RatingDate": "2024-04-05",
+      "Rating": 2.5,
+      "Users_UserID": 1,
+      "Users_Countries_CountryID": 1,
+      "Movies_MovieID": 13,
+      "Movies_Countries_CountryID": 2,
+      "Movies_Genres_GenreID": 3
+    },
+    {
+      "UserMovieRatingID": 14,
+      "RatingDate": "2024-05-12",
+      "Rating": 3.0,
+      "Users_UserID": 2,
+      "Users_Countries_CountryID": 2,
+      "Movies_MovieID": 14,
+      "Movies_Countries_CountryID": 1,
+      "Movies_Genres_GenreID": 4
+    },
+    {
+      "UserMovieRatingID": 15,
+      "RatingDate": "2024-06-18",
+      "Rating": 4.0,
+      "Users_UserID": 3,
+      "Users_Countries_CountryID": 3,
+      "Movies_MovieID": 15,
+      "Movies_Countries_CountryID": 1,
+      "Movies_Genres_GenreID": 5
+    },
+    {
+      "UserMovieRatingID": 16,
+      "RatingDate": "2024-07-25",
+      "Rating": 4.5,
+      "Users_UserID": 1,
+      "Users_Countries_CountryID": 1,
+      "Movies_MovieID": 16,
+      "Movies_Countries_CountryID": 2,
+      "Movies_Genres_GenreID": 1
+    },
+    {
+      "UserMovieRatingID": 17,
+      "RatingDate": "2024-08-30",
+      "Rating": 3.5,
+      "Users_UserID": 2,
+      "Users_Countries_CountryID": 2,
+      "Movies_MovieID": 17,
+      "Movies_Countries_CountryID": 1,
+      "Movies_Genres_GenreID": 2
+    },
+    {
+      "UserMovieRatingID": 18,
+      "RatingDate": "2024-09-05",
+      "Rating": 2.0,
+      "Users_UserID": 3,
+      "Users_Countries_CountryID": 3,
+      "Movies_MovieID": 18,
+      "Movies_Countries_CountryID": 2,
+      "Movies_Genres_GenreID": 3
+    },
+    {
+      "UserMovieRatingID": 19,
+      "RatingDate": "2024-10-15",
+      "Rating": 5.0,
+      "Users_UserID": 1,
+      "Users_Countries_CountryID": 1,
+      "Movies_MovieID": 19,
+      "Movies_Countries_CountryID": 1,
+      "Movies_Genres_GenreID": 4
+    },
+    {
+      "UserMovieRatingID": 20,
+      "RatingDate": "2024-11-20",
+      "Rating": 3.0,
+      "Users_UserID": 2,
+      "Users_Countries_CountryID": 2,
+      "Movies_MovieID": 20,
+      "Movies_Countries_CountryID": 2,
+      "Movies_Genres_GenreID": 5
+    }
+  ]
+  
