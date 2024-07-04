@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         isValid = validateEmailField('Email', 'El correo electrónico no es válido') && isValid;
         isValid = validateField('Password', 'La contraseña es obligatoria') && isValid;
         isValid = validateField('Birthday', 'La fecha de nacimiento es obligatoria') && isValid;
+        isValid = validateField('ProfilePicture', 'Agregue su foto de perfil') && isValid;
         isValid = validateField('Countries_CountryID', 'El país es obligatorio') && isValid;
         const terminos = document.getElementById('terminos').checked;
         if (!terminos) {
