@@ -1,52 +1,92 @@
 [
-    {
-        "UserID": 1,
-        "Name": "John",
-        "Surname": "Doe",
-        "Email": "johndoe@example.com",
-        "Password": "hashed_password_123",
-        "Birthday": "1990-05-15",
-        "ProfilePicture": "https://example.com/profile.jpg",
-        "Countries_CountryID": 7
-    },
-    {
-        "UserID": 2,
-        "Name": "Jane",
-        "Surname": "Smith",
-        "Email": "janesmith@example.com",
-        "Password": "hashed_password_456",
-        "Birthday": "1985-08-22",
-        "ProfilePicture": "https://example.com/profile2.jpg",
-        "Countries_CountryID": 4
-    },
-    {
-        "UserID": 3,
-        "Name": "Michael",
-        "Surname": "Johnson",
-        "Email": "michaeljohnson@example.com",
-        "Password": "hashed_password_789",
-        "Birthday": "1988-12-10",
-        "ProfilePicture": "https://example.com/profile3.jpg",
-        "Countries_CountryID": 6
-    },
-    {
-        "UserID": 4,
-        "Name": "Emily",
-        "Surname": "Brown",
-        "Email": "emilybrown@example.com",
-        "Password": "hashed_password_abc",
-        "Birthday": "1995-03-28",
-        "ProfilePicture": "https://example.com/profile4.jpg",
-        "Countries_CountryID": 7
-    },
-    {
-        "UserID": 5,
-        "Name": "David",
-        "Surname": "Wilson",
-        "Email": "davidwilson@example.com",
-        "Password": "hashed_password_xyz",
-        "Birthday": "1983-09-18",
-        "ProfilePicture": "https://example.com/profile5.jpg",
-        "Countries_CountryID": 7
-    }
+  {
+    "UserID": 1,
+    "Name": "John",
+    "Surname": "Doe",
+    "Email": "johndoe@example.com",
+    "Password": "hashed_password_123",
+    "Birthday": "1990-05-15",
+    "ProfilePicture": "https://example.com/profile.jpg",
+    "Countries_CountryID": 7
+  },
+  {
+    "UserID": 2,
+    "Name": "Jane",
+    "Surname": "Smith",
+    "Email": "janesmith@example.com",
+    "Password": "hashed_password_456",
+    "Birthday": "1985-08-22",
+    "ProfilePicture": "https://example.com/profile2.jpg",
+    "Countries_CountryID": 4
+  },
+  {
+    "UserID": 3,
+    "Name": "Michael",
+    "Surname": "Johnson",
+    "Email": "michaeljohnson@example.com",
+    "Password": "hashed_password_789",
+    "Birthday": "1988-12-10",
+    "ProfilePicture": "https://example.com/profile3.jpg",
+    "Countries_CountryID": 6
+  },
+  {
+    "UserID": 4,
+    "Name": "Emily",
+    "Surname": "Brown",
+    "Email": "emilybrown@example.com",
+    "Password": "hashed_password_abc",
+    "Birthday": "1995-03-28",
+    "ProfilePicture": "https://example.com/profile4.jpg",
+    "Countries_CountryID": 7
+  },
+  {
+    "UserID": 5,
+    "Name": "David",
+    "Surname": "Wilson",
+    "Email": "davidwilson@example.com",
+    "Password": "hashed_password_xyz",
+    "Birthday": "1983-09-18",
+    "ProfilePicture": "https://example.com/profile5.jpg",
+    "Countries_CountryID": 7
+  },
+  {
+    "UserID": 63,
+    "Name": "POst",
+    "Surname": "man",
+    "Email": "post34@man.com",
+    "Password": "$2b$10$rY4x478oIzjNo6WuoUFTHuUgtVPkhMkQRnJW7Cbynqf30mGzOp2km",
+    "Birthday": "1982-05-12",
+    "ProfilePicture": null,
+    "Countries_CountryID": "3"
+  },
+  {
+    "UserID": 64,
+    "Name": "POst",
+    "Surname": "man",
+    "Email": "post134@man.com",
+    "Password": "$2b$10$euPyHJilrdcRbSp20KXIyebRg5AE6vZIAVDnhA7uI.1.BRSPcsg8G",
+    "Birthday": "1982-05-12",
+    "ProfilePicture": null,
+    "Countries_CountryID": "3"
+  },
+  {
+    "UserID": 65,
+    "Name": "POst",
+    "Surname": "man",
+    "Email": "post1234@man.com",
+    "Password": "$2b$10$f18rbvV63W/UxbEUJn2g5e1iFCXkjQ4iBLjzaEHoDaXPOKNZCrdlG",
+    "Birthday": "1982-05-12",
+    "ProfilePicture": null,
+    "Countries_CountryID": "3"
+  },
+  {
+    "UserID": 66,
+    "Name": "El POst",
+    "Surname": "man",
+    "Email": "post12334@man.com",
+    "Password": "$2b$10$qwtoP.MM6BVwYQxgtZHsie5QQbcvWfFMwA91OO5a27V5RzaA6MjIa",
+    "Birthday": "1982-05-12",
+    "ProfilePicture": "1720133726983-imagenPerfil.jpg",
+    "Countries_CountryID": "7"
+  }
 ]

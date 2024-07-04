@@ -24,7 +24,7 @@ function validateToken(req, res, next) {
 }
 
 function loginPage(req, res) {
-    res.sendFile(path.join(__dirname, '../../public/login.html'));
+    res.sendFile(path.join(__dirname, '../../public/html/iniciosesion.html'));
 }
 
 async function registerUser(req, res) {
