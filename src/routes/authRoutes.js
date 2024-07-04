@@ -4,7 +4,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const multer = require('multer');
 const path = require('path');
-const { validateToken } = require('../controllers/authController');
+const { validateToken, authenticateUser, registerUser  } = require('../controllers/authController');
 const { getUserByEmail, createUser } = require('../controllers/userController');
 
 const storage = multer.diskStorage({

@@ -1,4 +1,6 @@
 const express = require('express');
+const fs = require('fs');
+const path = require('path');
 const movieRoutes = require('./src/routes/movieRoutes');
 const userRoutes = require('./src/routes/userRoutes');
 const authRoutes = require('./src/routes/authRoutes');
@@ -6,6 +8,12 @@ const dotenv = require('dotenv').config();
 const db = require('./src/db/db');
 
 const app = express();
+
+// Verificar si el directorio uploads existe, si no, crearlo
+const uploadsDir = path.join(__dirname, 'uploads');
+if (!fs.existsSync(uploadsDir)) {
+    fs.mkdirSync(uploadsDir);
+}
 
 app.use(express.urlencoded({extended:true})) 
 app.use(express.json()); // Middleware para parsear JSON

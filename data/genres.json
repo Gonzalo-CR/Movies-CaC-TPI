@@ -1,0 +1,14 @@
+[
+    { "GenreID": 1, "GenreName": "Accion" },
+    { "GenreID": 2, "GenreName": "Animación" },
+    { "GenreID": 3, "GenreName": "Aventura" },
+    { "GenreID": 4, "GenreName": "Ciencia Ficción" },
+    { "GenreID": 5, "GenreName": "Comedia" },
+    { "GenreID": 6, "GenreName": "Documentales" },
+    { "GenreID": 7, "GenreName": "Drama" },
+    { "GenreID": 8, "GenreName": "Fantasia" },
+    { "GenreID": 9, "GenreName": "Infantil" },
+    { "GenreID": 10, "GenreName": "Musicales" },
+    { "GenreID": 11, "GenreName": "Suspense" },
+    { "GenreID": 12, "GenreName": "Terror" }
+]

@@ -1,0 +1,17 @@
+[
+    { "CountryID": 1, "CountryName": "Alemania" },
+    { "CountryID": 2, "CountryName": "Argentina" },
+    { "CountryID": 3, "CountryName": "Bolivia" },
+    { "CountryID": 4, "CountryName": "Brasil" },
+    { "CountryID": 5, "CountryName": "Canada" },
+    { "CountryID": 6, "CountryName": "Chile" },
+    { "CountryID": 7, "CountryName": "España" },
+    { "CountryID": 8, "CountryName": "Estados Unidos" },
+    { "CountryID": 9, "CountryName": "Francia" },
+    { "CountryID": 10, "CountryName": "Gran Bretaña" },
+    { "CountryID": 11, "CountryName": "Italia" },
+    { "CountryID": 12, "CountryName": "Mexico" },
+    { "CountryID": 13, "CountryName": "Paraguay" },
+    { "CountryID": 14, "CountryName": "Peru" },
+    { "CountryID": 15, "CountryName": "Uruguay" }
+]

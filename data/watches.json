@@ -1,0 +1,183 @@
+[
+    {
+      "UserMovieWatchID": 1,
+      "WatchDate": "2023-05-15",
+      "Users_UserID": 1,
+      "Users_Countries_CountryID": 1,
+      "Movies_MovieID": 1,
+      "Movies_Countries_CountryID": 1,
+      "Movies_Genres_GenreID": 1
+    },
+    {
+      "UserMovieWatchID": 2,
+      "WatchDate": "2023-06-20",
+      "Users_UserID": 2,
+      "Users_Countries_CountryID": 2,
+      "Movies_MovieID": 3,
+      "Movies_Countries_CountryID": 1,
+      "Movies_Genres_GenreID": 3
+    },
+    {
+      "UserMovieWatchID": 3,
+      "WatchDate": "2023-04-10",
+      "Users_UserID": 3,
+      "Users_Countries_CountryID": 3,
+      "Movies_MovieID": 2,
+      "Movies_Countries_CountryID": 2,
+      "Movies_Genres_GenreID": 2
+    },
+    {
+      "UserMovieWatchID": 4,
+      "WatchDate": "2023-07-05",
+      "Users_UserID": 1,
+      "Users_Countries_CountryID": 1,
+      "Movies_MovieID": 4,
+      "Movies_Countries_CountryID": 1,
+      "Movies_Genres_GenreID": 4
+    },
+    {
+      "UserMovieWatchID": 5,
+      "WatchDate": "2023-08-12",
+      "Users_UserID": 2,
+      "Users_Countries_CountryID": 2,
+      "Movies_MovieID": 5,
+      "Movies_Countries_CountryID": 2,
+      "Movies_Genres_GenreID": 5
+    },
+    {
+      "UserMovieWatchID": 6,
+      "WatchDate": "2023-09-18",
+      "Users_UserID": 3,
+      "Users_Countries_CountryID": 3,
+      "Movies_MovieID": 6,
+      "Movies_Countries_CountryID": 1,
+      "Movies_Genres_GenreID": 1
+    },
+    {
+      "UserMovieWatchID": 7,
+      "WatchDate": "2023-10-25",
+      "Users_UserID": 1,
+      "Users_Countries_CountryID": 1,
+      "Movies_MovieID": 7,
+      "Movies_Countries_CountryID": 2,
+      "Movies_Genres_GenreID": 2
+    },
+    {
+      "UserMovieWatchID": 8,
+      "WatchDate": "2023-11-30",
+      "Users_UserID": 2,
+      "Users_Countries_CountryID": 2,
+      "Movies_MovieID": 8,
+      "Movies_Countries_CountryID": 1,
+      "Movies_Genres_GenreID": 3
+    },
+    {
+      "UserMovieWatchID": 9,
+      "WatchDate": "2023-12-05",
+      "Users_UserID": 3,
+      "Users_Countries_CountryID": 3,
+      "Movies_MovieID": 9,
+      "Movies_Countries_CountryID": 2,
+      "Movies_Genres_GenreID": 4
+    },
+    {
+      "UserMovieWatchID": 10,
+      "WatchDate": "2024-01-15",
+      "Users_UserID": 1,
+      "Users_Countries_CountryID": 1,
+      "Movies_MovieID": 10,
+      "Movies_Countries_CountryID": 1,
+      "Movies_Genres_GenreID": 5
+    },
+    {
+      "UserMovieWatchID": 11,
+      "WatchDate": "2024-02-20",
+      "Users_UserID": 2,
+      "Users_Countries_CountryID": 2,
+      "Movies_MovieID": 11,
+      "Movies_Countries_CountryID": 2,
+      "Movies_Genres_GenreID": 1
+    },
+    {
+      "UserMovieWatchID": 12,
+      "WatchDate": "2024-03-10",
+      "Users_UserID": 3,
+      "Users_Countries_CountryID": 3,
+      "Movies_MovieID": 12,
+      "Movies_Countries_CountryID": 1,
+      "Movies_Genres_GenreID": 2
+    },
+    {
+      "UserMovieWatchID": 13,
+      "WatchDate": "2024-04-05",
+      "Users_UserID": 1,
+      "Users_Countries_CountryID": 1,
+      "Movies_MovieID": 13,
+      "Movies_Countries_CountryID": 2,
+      "Movies_Genres_GenreID": 3
+    },
+    {
+      "UserMovieWatchID": 14,
+      "WatchDate": "2024-05-12",
+      "Users_UserID": 2,
+      "Users_Countries_CountryID": 2,
+      "Movies_MovieID": 14,
+      "Movies_Countries_CountryID": 1,
+      "Movies_Genres_GenreID": 4
+    },
+    {
+      "UserMovieWatchID": 15,
+      "WatchDate": "2024-06-18",
+      "Users_UserID": 3,
+      "Users_Countries_CountryID": 3,
+      "Movies_MovieID": 15,
+      "Movies_Countries_CountryID": 1,
+      "Movies_Genres_GenreID": 5
+    },
+    {
+      "UserMovieWatchID": 16,
+      "WatchDate": "2024-07-25",
+      "Users_UserID": 1,
+      "Users_Countries_CountryID": 1,
+      "Movies_MovieID": 16,
+      "Movies_Countries_CountryID": 2,
+      "Movies_Genres_GenreID": 1
+    },
+    {
+      "UserMovieWatchID": 17,
+      "WatchDate": "2024-08-30",
+      "Users_UserID": 2,
+      "Users_Countries_CountryID": 2,
+      "Movies_MovieID": 17,
+      "Movies_Countries_CountryID": 1,
+      "Movies_Genres_GenreID": 2
+    },
+    {
+      "UserMovieWatchID": 18,
+      "WatchDate": "2024-09-05",
+      "Users_UserID": 3,
+      "Users_Countries_CountryID": 3,
+      "Movies_MovieID": 18,
+      "Movies_Countries_CountryID": 2,
+      "Movies_Genres_GenreID": 3
+    },
+    {
+      "UserMovieWatchID": 19,
+      "WatchDate": "2024-10-15",
+      "Users_UserID": 1,
+      "Users_Countries_CountryID": 1,
+      "Movies_MovieID": 19,
+      "Movies_Countries_CountryID": 1,
+      "Movies_Genres_GenreID": 4
+    },
+    {
+      "UserMovieWatchID": 20,
+      "WatchDate": "2024-11-20",
+      "Users_UserID": 2,
+      "Users_Countries_CountryID": 2,
+      "Movies_MovieID": 20,
+      "Movies_Countries_CountryID": 2,
+      "Movies_Genres_GenreID": 5
+    }
+  ]
+  
