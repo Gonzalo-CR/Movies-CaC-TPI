@@ -88,5 +88,25 @@
     "Birthday": "1982-05-12",
     "ProfilePicture": "1720133726983-imagenPerfil.jpg",
     "Countries_CountryID": "7"
+  },
+  {
+    "UserID": 67,
+    "Name": "El POst",
+    "Surname": "man",
+    "Email": "post112334@man.com",
+    "Password": "$2b$10$Ee9MbdmCO9Ofa6HlTJmcQunjU5AJczTcTC4OXQEoLjB6BPBISgT8G",
+    "Birthday": "1982-05-12",
+    "ProfilePicture": null,
+    "Countries_CountryID": "7"
+  },
+  {
+    "UserID": 68,
+    "Name": "El POst",
+    "Surname": "man",
+    "Email": "post1122334@man.com",
+    "Password": "$2b$10$rMwCWd0D7YyxNb5wOxmhDuGQdbfi53drgQ8EwPwbc36adw1mMjF..",
+    "Birthday": "1982-05-12",
+    "ProfilePicture": null,
+    "Countries_CountryID": "7"
   }
 ]
