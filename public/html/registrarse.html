@@ -20,6 +20,7 @@
     <main id="main" class="main">
         <section data-aos="zoom-in" data-aos-duration="1000" class="seccionRegistrarse">
             <form id="registerForm" method="post" action="/register" enctype="multipart/form-data">
+            <form id="registerForm" method="post" action="/register" enctype="multipart/form-data">
                 <h2 class="tituloRegistrarse">Registro</h2>
                 <div>
                     <input type="text" placeholder="Nombre" id="Name" name="Name" required>
@@ -39,6 +40,10 @@
                 </div>
                 <div>
                     <input type="date" placeholder="Fecha de Nacimiento (dd/mm/aaaa)" id="Birthday" name="Birthday" required>
+                    <div class="error-text"></div>
+                </div>
+                <div>
+                    <input type="file" id="ProfilePicture" name="ProfilePicture" title="foto de perfil" required>
                     <div class="error-text"></div>
                 </div>
                 <div>
@@ -78,6 +83,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+            document.addEventListener('DOMContentLoaded', () => {
             document.addEventListener('DOMContentLoaded', () => {
             const form = document.querySelector('form');
             form.addEventListener('submit', (event) => {
