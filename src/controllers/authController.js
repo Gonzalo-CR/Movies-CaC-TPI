@@ -16,7 +16,7 @@ function validateToken(req, res, next) {
 }
 
 function loginPage(req, res) {
-    res.sendFile(path.join(__dirname, '../../iniciosesion.html'));
+    res.sendFile(path.join(__dirname, '../../public/html/iniciosesion.html'));
 }
 
 module.exports = {

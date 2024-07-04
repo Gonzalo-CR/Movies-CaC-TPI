@@ -49,7 +49,7 @@ const createUser = (Name, Surname, Email, Password, Birthday, ProfilePicture, Co
                 ProfilePicture,
                 Countries_CountryID
             };
-            const usersFilePath = path.join(__dirname, '../../data/users.json');
+            const usersFilePath = path.join(__dirname, '../db/data/users.json');
             fs.readFile(usersFilePath, 'utf8', (err, data) => {
                 if (err) return reject(err);
                 const users = JSON.parse(data);

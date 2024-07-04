@@ -35,7 +35,7 @@ const watchesFilePath = path.join(jsonFilesPath, 'watches.json');
 const ratingsFilePath = path.join(jsonFilesPath, 'ratings.json');
 
 // Crear las tablas y cargar los datos
-connection.query(fs.readFileSync(path.join(__dirname, './movies.sql'), 'utf8'), (err) => {
+connection.query(fs.readFileSync(path.join(__dirname, 'movies.sql'), 'utf8'), (err) => {
     if (err) {
         console.error('Error creating tables:', err);
     } else {
