@@ -42,36 +42,6 @@
     <script>
         AOS.init();
     </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const loginForm = document.getElementById('loginForm');
-            loginForm.addEventListener('submit', async (event) => {
-                event.preventDefault();
-                const formData = new FormData(loginForm);
-                const data = Object.fromEntries(formData.entries());
-
-                try {
-                    const response = await fetch('/auth', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify(data)
-                    });
-
-                    const result = await response.json();
-                    if (result.token) {
-                        console.log('Inicio de sesión exitoso!!');
-                        window.location.href = result.redirectUrl;
-                    } else {
-                        console.error('Error de autenticación:', result.error);
-                    }
-                } catch (error) {
-                    console.error('Error en la solicitud:', error);
-                }
-            });
-        });
-    </script>
     <script src="js/valida_iniciosesion.js"></script>
 </body>
 </html>

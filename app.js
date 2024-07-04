@@ -1,18 +1,21 @@
 const express = require('express');
 const movieRoutes = require('./src/routes/movieRoutes');
 const userRoutes = require('./src/routes/userRoutes');
-const dotenv = require('dotenv').config();
 const authRoutes = require('./src/routes/authRoutes');
+const dotenv = require('dotenv').config();
 const db = require('./src/db/db');
 
 const app = express();
 
 app.use(express.urlencoded({extended:true})) 
 app.use(express.json()); // Middleware para parsear JSON
+app.use(express.static('public')); // Servir archivos estáticos
+app.use('/uploads', express.static('uploads')); // Servir archivos subidos
 
 // Rutas
 app.use('/movies', movieRoutes);
 app.use('/users', userRoutes);
+app.use('/', authRoutes);
 
 const PORT = process.env.PORT || 3000;
 
@@ -20,12 +23,13 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + 'index.html');
 });
 
-app.use('/', authRoutes);
 
+//manejo de errores de rutas no encontradas
 app.use((req, res, next) => {
     res.status(404).json({ error: 'Not Found' });
 });
 
+// Manejo de errores globales 500 y stack para depuración
 app.use((err, req, res, next) => {
     console.error(err.stack);
     res.status(500).json({ error: 'Internal Server Error' });

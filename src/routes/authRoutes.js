@@ -4,7 +4,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const multer = require('multer');
 const path = require('path');
-const { validateToken, loginPage } = require('../controllers/authController');
+const { validateToken } = require('../controllers/authController');
 const { getUserByEmail, createUser } = require('../controllers/userController');
 
 const storage = multer.diskStorage({
@@ -18,7 +18,9 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 // Ruta de inicio de sesión
-router.get('/login', loginPage);
+router.get('/login', (req, res) => {
+    res.sendFile(path.join(__dirname, '../../public/html/iniciosesion.html'));
+});
 
 // Ruta de registro de usuario
 router.post('/register', upload.single('ProfilePicture'), async (req, res) => {

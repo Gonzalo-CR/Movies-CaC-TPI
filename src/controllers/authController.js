@@ -1,5 +1,9 @@
 const jwt = require('jsonwebtoken');
 
+function generateToken(userId) {
+    return jwt.sign({ userId }, process.env.SECRET || 'your_secret_key', { expiresIn: '1h' });
+}
+
 function validateToken(req, res, next) {
     const accessToken = req.headers['authorization'] || req.query.accessToken;
     if (!accessToken) {
@@ -20,6 +24,7 @@ function loginPage(req, res) {
 }
 
 module.exports = {
+    generateToken,
     validateToken,
     loginPage
 };

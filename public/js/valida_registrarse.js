@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('registerForm');
+    const form = document.querySelector('form');
     form.addEventListener('submit', (event) => {
         if (!validateForm()) {
             console.log('El formulario no es válido. Por favor, corrige los errores.');
@@ -12,13 +12,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const validateForm = () => {
         let isValid = true;
+
         isValid = validateField('Name', 'El nombre es obligatorio') && isValid;
         isValid = validateField('Surname', 'El apellido es obligatorio') && isValid;
         isValid = validateEmailField('Email', 'El correo electrónico no es válido') && isValid;
         isValid = validateField('Password', 'La contraseña es obligatoria') && isValid;
         isValid = validateField('Birthday', 'La fecha de nacimiento es obligatoria') && isValid;
-        isValid = validateField('ProfilePicture', 'Agregue su foto de perfil') && isValid;
+        isValid = validateField('ProfilePicture', 'La imagen de perfil es obligatoria') && isValid;
         isValid = validateField('Countries_CountryID', 'El país es obligatorio') && isValid;
+
         const terminos = document.getElementById('terminos').checked;
         if (!terminos) {
             isValid = false;
@@ -26,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             setSuccessFor(document.getElementById('terminos'));
         }
+
         return isValid;
     };
 
@@ -72,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const isEmail = (email) => {
-        const re = /^[^\s@]+@[^\s@]+$/;
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return re.test(email);
     };
 
