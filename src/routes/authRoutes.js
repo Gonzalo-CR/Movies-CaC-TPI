@@ -30,15 +30,13 @@ router.put('/profile/:userId', upload.single('ProfilePicture'), async (req, res)
       const { userId } = req.params;
       const { Name, Surname, Email, Password, Birthday, Countries_CountryID } = req.body;
       
-      // Opcional: Validar la información del usuario en el body
-      // ... (validaciones)
+     
       
       let updateData = {};
       if (req.file) {
         updateData.ProfilePicture = req.file.filename;
         
-        // Opcional: Eliminar la imagen anterior (si existe)
-        const previousImage = await getUserById(userId); // Obtener información del usuario
+        const previousImage = await getUserById(userId); 
         if (previousImage.ProfilePicture) {
           const filePath = path.join(__dirname, '../../uploads', previousImage.ProfilePicture);
           fs.unlinkSync(filePath); // Eliminar archivo existente
@@ -47,8 +45,8 @@ router.put('/profile/:userId', upload.single('ProfilePicture'), async (req, res)
       
       if (Name) updateData.Name = Name;
       if (Surname) updateData.Surname = Surname;
-      if (Email) updateData.Email = Email; // Ten cuidado al permitir cambios de email
-      if (Password) updateData.Password = await bcrypt.hash(Password, 10); // Encriptar nueva contraseña
+      if (Email) updateData.Email = Email; 
+      if (Password) updateData.Password = await bcrypt.hash(Password, 10); 
       if (Birthday) updateData.Birthday = Birthday;
       if (Countries_CountryID) updateData.Countries_CountryID = Countries_CountryID;
       
