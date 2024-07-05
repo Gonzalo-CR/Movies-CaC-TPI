@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "342f7d1b-c0ff-44a8-be3b-ade784795f79",
+		"name": "CaC-crud-TPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36281165"
+	},
+	"item": [
+		{
+			"name": "GET USER",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/67",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"67"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/register/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UserID",
+							"value": "68",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "Name",
+							"value": "El POst",
+							"type": "text"
+						},
+						{
+							"key": "Surname",
+							"value": "okok",
+							"type": "text"
+						},
+						{
+							"key": "Email",
+							"value": "elmai@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "Password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "Birthday",
+							"value": "1982-05-12",
+							"type": "text"
+						},
+						{
+							"key": "ProfilePicture",
+							"type": "file",
+							"src": "postman-cloud:///1ef3a586-c176-43e0-a510-ae2e7120577c"
+						},
+						{
+							"key": "Countries_CountryID",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/register/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Email",
+							"value": "post112334@man.com",
+							"type": "text"
+						},
+						{
+							"key": "Password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/profile/68",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "PUT",
+							"type": "text"
+						},
+						{
+							"key": "Email",
+							"value": "elmail@mail.ok",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "Password",
+							"value": "654321",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/profile/68",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"profile",
+						"68"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/68",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/68",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"68"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
